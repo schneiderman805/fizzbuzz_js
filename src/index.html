@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/preflight.min.css" rel="stylesheet">
+
+    <!-- Any of your own CSS would go here -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/utilities.min.css" rel="stylesheet">
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+<h1>
+    <div class="font-sans text-lg text-white-darkest text-center">
+    Fizz Buzz Game 
+    </div>
+</h1>
+<br>
+<div class="flex justify-center">
+    <input class="text-white bg-blue" type="text" id="value">
+</div>
+<br>
+<div class="flex justify-center">
+    <input type="submit" value="Check" id="button">
+</div>
+
+    <div class="flex justify-center text-5xl ">
+    <div id="display_answer"></div> 
+    </div>
+
+</body>
+    <script src="./js/fizz-buzz.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                let button = document.getElementById('button')
+                let displayDiv = document.getElementById('display_answer')
+                button.addEventListener('click', () =>{
+                    let value = document.getElementById('value').value
+                    let fizzBuzz = new FizzBuzz
+                    let result = fizzBuzz.check(value)
+                    displayDiv.innerHTML = result;
+                })
+            })
+        </script>
+
+
+</html>
