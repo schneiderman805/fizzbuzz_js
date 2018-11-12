@@ -1,3 +1,26 @@
+### user stories
+
+As a programmer
+So that the game can be played according to the rules
+I want a normal number to return that number
+
+As a programmer
+So that the game can be played according to the rules
+I want a number divisible by three to return 'fizz'
+As a programmer
+
+So that the game can be played according to the rules
+I want a number divisible by five to return 'buzz'
+As a programmer
+
+So that the game can be played according to the rules
+I want a number divisible by fifteen to return 'fizz buzz'
+
+
+
+
+
+
 ### Question 1. In your README to the best of your knowledge please explain what the following lines of code do
 
 It is telling fizzbuzz to be fs.readFileSync and to fallow the path of './src/js/fizz-buzz.js'. thats basically all i can say at this point. 
